@@ -9,7 +9,9 @@ function destructivelyPrependKitten (name) {
   return kittens.unshift(name)
 }
 
-
+function destructivelyRemoveLastKitten (name) {
+  
+}
 
   describe('destructivelyRemoveLastKitten()', function() {
     it('removes the last kitten from the kittens array', function() {
