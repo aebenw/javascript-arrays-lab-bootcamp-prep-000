@@ -9,13 +9,7 @@ function destructivelyPrependKitten (name) {
   return kittens.unshift(name)
 }
 
-  describe('destructivelyPrependKitten(name)', function() {
-    it('prepends a kitten to the beginning of the kittens array', function() {
-      destructivelyPrependKitten("Bob")
 
-      expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
-    })
-  })
 
   describe('destructivelyRemoveLastKitten()', function() {
     it('removes the last kitten from the kittens array', function() {
