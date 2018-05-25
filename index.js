@@ -2,14 +2,12 @@ const app = "I don't do much."
 var kittens = ['Milo', 'Otis', 'Garfield']
 
 function destructivelyAppendKitten (name) {
-describe('Arrays', function() {
- 
-  describe('destructivelyAppendKitten(name)', function() {
-    it('appends a kitten to the end of the kittens array', function() {
-      destructivelyAppendKitten('Ralph')
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield", "Ralph"])
-    })
-  })
+  return kittens.push(name)
+}
+
+function destructivelyPrependKitten (name) {
+  return kittens.unshift(name)
+}
 
   describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
