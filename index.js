@@ -32,7 +32,10 @@ function removeLastKitten () {
   return newKittens
 }
 
-
+function removeFirstKitten() {
+  var newKittens = kittens.slice (0,1)
+  return newKittens
+}
   describe('removeFirstKitten()', function() {
     it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
